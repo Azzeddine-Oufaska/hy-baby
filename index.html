@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday 7abibti</title>
+
+<style>
+body {
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("flowers.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family:Arial;
+}
+
+@keyframes glow {
+    0% { box-shadow:0 0 15px rgba(255,60,100,.5); }
+    50% { box-shadow:0 0 40px rgba(255,60,100,.9); }
+    100% { box-shadow:0 0 15px rgba(255,60,100,.5); }
+}
+
+.envelope {
+    width:330px;
+    height:300px;
+    background:#f0e8e8;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+    animation: glow 2s infinite;
+}
+
+/* COEUR */
+@keyframes beat {
+    0% { transform:translateX(-50%) rotate(-45deg) scale(1); }
+    50% { transform:translateX(-50%) rotate(-45deg) scale(1.2); }
+    100% { transform:translateX(-50%) rotate(-45deg) scale(1); }
+}
+
+.heart {
+    position:absolute;
+    top:140px;
+    left:50%;
+    width:35px;
+    height:35px;
+    background:#ff3b5c;
+    transform:translateX(-50%) rotate(-45deg);
+    animation: beat 1s infinite;
+    z-index:5;
+}
+
+.heart:before,
+.heart:after {
+    content:"";
+    position:absolute;
+    width:35px;
+    height:35px;
+    background:#ff3b5c;
+    border-radius:50%;
+}
+
+.heart:before {
+    top:-18px;
+    left:0;
+}
+
+.heart:after {
+    left:18px;
+    top:0;
+}
+
+.flap {
+    position:absolute;
+    width:0;
+    height:0;
+    border-left:165px solid transparent;
+    border-right:165px solid transparent;
+    border-top:120px solid #ff5e78;
+    top:0;
+    left:0;
+    transform-origin:top;
+    transition:.8s;
+}
+
+.letter {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:white;
+    padding:15px;
+    box-sizing:border-box;
+    text-align:center;
+    transform:translateY(100%);
+    transition:.8s;
+    overflow-y:auto;
+}
+
+.envelope.open .flap {
+    transform:rotateX(180deg);
+}
+
+.envelope.open .letter {
+    transform:translateY(0);
+}
+
+.photo {
+    width:50%;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+h1 {
+    color:#ff3b5c;
+}
+
+p {
+    font-size:14px;
+    line-height:1.5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="envelope" onclick="openEnvelope()">
+    <div class="flap"></div>
+    <div class="heart"></div>
+
+<div class="letter">
+
+<h1>Feliz cumpleaños 7abibti ❤️</h1>
+
+ <p>
+        Mi Mujer jamilati 7abibati tassmoute diali chamss diali li mdewya lia tri9i💕,<br>
+        Lyoume kayta3taber a7ssen nhar lia o lik be nessba li 3lach kayta3taber a7ssen nhar hitach twaldate fih wa7ed le inssana li kanbghiha o nda7i be ay haja 3la wedha o had le 2inssana atkone fer7ana hitach twaldate fe had nhar o hitach tla9ate biya o a7ssen 7aja trate lia fe had denya hiya ntiya ya 2a7ssen deriya fel kawn kanbghikkkkke bezzzzzaf ya li tzad liha 3amm fe 7yatha ya li dkhelti lia le 7yati o 9lebtiha ra2ssane 3la 3a9ibbe ya malikatti o ya 2amiratti ya lkbida o l9alyeb dialli ditih men awel mera dwina ana wyake fih a zwina diali
+        sem7i lia bezzaf 3la lmachakille li traw binatna a benti sem7i lia bezzaf wakha 3reft atkone had sem7i li sem7i lia bezzaf tel3at lik fe rass men ktert makatssem3iha bghit ngolik daba bi anaho mabghitch nt9al9o men ba3diyatna hitach makaynch li gha yssla7 binatna men ghirna a 7obino bsse7 anaho ghadi nban lik b7ala gha dawi o saffi walakine ti9i biya olah ta ay haja kangolha lik kharja men l9aleb a 7bibti sam7i lia bezzaf bezzaf a zwina diali <b></b>
+        tassmounte ino adreb 12 del lile atel9ay had lien li sift lik daba fih had lmessage ma3ert wach ghadi tla3 lik tasswira o le message walakine 3arfini a zwina diali bli hadi hiya lmofaja2a diali lik a 7obino ma3ert wach ghadi t3ajbek ola la walakine rah lien dial site 9adito lik a zwina diali bghite ngolik سنة سعيدة a lkbida diallli  ko kenti 7daya nchri lik l7alwa be lakrime Hhhhhhhh walakine rah anchriha lik darori na7taflo ana wyak fe tomobile saffi a zwina diali ola na7taflo be chi tajine Hhhhhhhhhhhhhhh kanbghike a zwina diali bezzzzzzaf 9albi ditih safffi chno b9a lik teddi yalah b9a lik gha tagrissini o tedi lia 7wayji ama 9albi ditih o dini m3ahh ta ana a zwina diali 3afak 💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖
+        <br>Je t’aime plus que tout 🌹<br><br>
+
+        💖💕💖— Tu Marido Azzddine te dio un beso 💖💕💖
+        </p>
+
+<img src="photo.jpeg" class="photo">
+
+</div>
+</div>
+
+<audio id="music" loop>
+<source src="love.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let opened=false;
+
+function openEnvelope(){
+document.querySelector(".envelope").classList.toggle("open");
+
+if(!opened){
+document.getElementById("music").play();
+opened=true;
+}
+}
+</script>
+
+</body>
+</html>
